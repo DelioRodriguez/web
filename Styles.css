@@ -1,0 +1,150 @@
+/* Colores principales */
+:root {
+    --dark-green: #004d40;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--white);
+    background-color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: var(--white);
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Estilos del Header y Navegación */
+header {
+    background-color: var(--dark-green);
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Home */
+#home {
+    background-color: var(--dark-green);
+    padding: 100px 20px; /* Aumenta el padding superior e inferior según sea necesario */
+    min-height: 90vh;  /* Asegura que la sección cubra al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+/* Sección Proyectos */
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--black);
+    border: 1px solid var(--dark-green);
+}
+
+/* Sección Sobre mí */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-photo {
+    margin-right: 30px;
+    text-align: center;
+}
+
+.about-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid var(--dark-green);
+}
+
+.about-info {
+    max-width: 600px;
+}
+
+.about-info p, .about-info ul {
+    margin: 10px 0;
+}
+
+.about-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-info ul li a {
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+.about-info ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Certificaciones */
+.certification {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--black);
+    border: 1px solid var(--dark-green);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.certification-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.certification-image img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--dark-green);
+    border-radius: 8px;
+}
+
+/* Sección Contacto */
+#contact {
+    padding-bottom: 60px; /* Ajusta este valor si es necesario */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-green);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
